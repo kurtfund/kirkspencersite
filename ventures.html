@@ -86,7 +86,7 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 .top .brand{font-weight:600;letter-spacing:-.01em;font-size:15px}
 .top .brand .dot{color:var(--red)}
 .top nav{display:flex;gap:calc(var(--u)*4)}
-.top nav a{font-size:13px;letter-spacing:.02em;color:var(--fg-dim);position:relative;padding-bottom:2px}
+.top nav a{font-size:15px;letter-spacing:.02em;color:var(--fg-dim);position:relative;padding-bottom:2px}
 .top nav a::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:1px;background:var(--ink);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
 .top nav a:hover{color:var(--ink)}
 .top nav a:hover::after{transform:scaleX(1)}
@@ -200,21 +200,21 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 
 /* ---------- Footer ---------- */
 .foot{padding:calc(var(--u)*5) 0 calc(var(--u)*4);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(var(--cols),1fr);gap:var(--gutter);align-items:baseline}
-.foot .a{grid-column:1 / span 4;font-size:12px;color:var(--fg-dim);letter-spacing:.02em}
+.foot .a{grid-column:1 / span 4;font-size:15px;color:var(--fg-dim);letter-spacing:.02em}
 .foot .b{grid-column:6 / span 3;font-size:12px;color:var(--fg-dim);letter-spacing:.02em}
-.foot .c{grid-column:10 / span 3;text-align:right;font-size:12px;color:var(--fg-dim);letter-spacing:.02em}
+.foot .c{grid-column:10 / span 3;text-align:right;font-size:15px;color:var(--fg-dim);letter-spacing:.02em}
 .foot .c a{color:var(--ink);border-bottom:1px solid var(--line-strong);padding-bottom:1px;transition:border-color .3s}
 .foot .c a:hover{border-color:var(--red);color:var(--red)}
 .foot .c a.mk{display:inline-block;margin-bottom:calc(var(--u)*1.25);color:var(--red);border-bottom-color:transparent;font-weight:500}
 .foot .c a.mk:hover{border-bottom-color:var(--red)}
 
 /* grid hint chip */
-.ghint{position:fixed;bottom:16px;left:var(--page);z-index:8500;font-size:11px;letter-spacing:.04em;color:var(--fg-dim);display:flex;align-items:center;gap:8px;mix-blend-mode:normal}
+.ghint{position:fixed;bottom:16px;left:var(--page);z-index:8500;font-size:15px;letter-spacing:.04em;color:var(--fg-dim);display:flex;align-items:center;gap:8px;mix-blend-mode:normal}
 .ghint kbd{font-family:var(--ff);font-size:11px;border:1px solid var(--line-strong);border-radius:3px;padding:1px 6px;color:var(--ink);background:rgba(255,255,255,.4)}
 .ghint.hot kbd{border-color:var(--red);color:var(--red)}
 
 /* clock */
-.clock{position:fixed;bottom:16px;right:var(--page);z-index:8500;font-size:11px;letter-spacing:.04em;color:var(--fg-dim);font-variant-numeric:tabular-nums;mix-blend-mode:normal}
+.clock{position:fixed;bottom:16px;right:var(--page);z-index:8500;font-size:15px;letter-spacing:.04em;color:var(--fg-dim);font-variant-numeric:tabular-nums;mix-blend-mode:normal}
 .clock b{color:var(--ink);font-weight:500}
 
 /* ---------- Responsive ---------- */
@@ -254,7 +254,7 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 }
 </style>
 </head>
-<body><video autoplay="autoplay" id="bg-video" loop="loop" muted="muted" playsinline="playsinline" src="saveweb2zip-com-web-archive-org%20%281%29/web.archive.org/web/20240909035424im_/https_/cdn-prod-ccv.adobe.com/GiCBs72_pen/rend/GiCBs72_pen_720_hdnts%3Dst%253D1725853463~exp%253D1725939863~acl%253D%252Fshared_assets%252Fimage%252F%252A%2521%252Fz%252FGiCBs72_pen%252Frend%252F%252A%2521%252Fi%252FGiCBs72_pen%252Frend%252F%252A%2521%252FGiCBs72_pen%252Frend%252F%252A%2521%252FGiCBs72_pen%252Fimage%252F%252A%2521%252F.mp4" style="position: fixed; inset: 0; width: 100vw; height: 100vh; object-fit: cover; z-index: -1;"></video>
+<body><video autoplay="autoplay" id="bg-video" loop="loop" muted="muted" playsinline="playsinline" src="./saveweb2zip-com-web-archive-org%20%281%29/web.archive.org/web/20240909035424im_/https_/cdn-prod-ccv.adobe.com/GiCBs72_pen/rend/GiCBs72_pen_720_hdnts%3Dst%253D1725853463~exp%253D1725939863~acl%253D%252Fshared_assets%252Fimage%252F%252A%2521%252Fz%252FGiCBs72_pen%252Frend%252F%252A%2521%252Fi%252FGiCBs72_pen%252Frend%252F%252A%2521%252FGiCBs72_pen%252Frend%252F%252A%2521%252FGiCBs72_pen%252Fimage%252F%252A%2521%252F.mp4" style="position: fixed; inset: 0; width: 100vw; height: 100vh; object-fit: cover; z-index: -1;"></video>
 <!-- grid overlay -->
 <div aria-hidden="true" class="baseline-rows" id="baseRows"></div>
 <div aria-hidden="true" class="grid-overlay" id="grid"></div>
@@ -262,19 +262,18 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 <!-- hover flash field -->
 <div class="flash" id="flash"><div class="flash-img" id="flashImg"></div></div>
 <header class="top" id="top">
-<a aria-label="Kirk Spencer, home" class="brand" href="index.html"><img src="saveweb2zip-com-web-archive-org (1)/assets/f6621a6a-3972-46cc-9c0c-241f0c67823f_rw_1920.png" style="height: 18px; width: auto;" alt="Kirk Spencer"></a>
+<a aria-label="Kirk Spencer, home" class="brand" href="index.html"><img alt="Kirk Spencer" src="./saveweb2zip-com-web-archive-org (1)/assets/f6621a6a-3972-46cc-9c0c-241f0c67823f_rw_1920.png" style="height: 18px; width: auto;"/></a>
 <nav><a href="index.html">Home</a></nav>
 </header>
 <main class="wrap">
 <!-- HERO -->
 <section class="hero row12">
 <div class="logotype" id="logotype" style="grid-column: 1 / -1; margin-top: 0; padding-top: 40px;">
-  <h1 style="font-size: clamp(50px, 9vw, 160px); font-weight: 500; letter-spacing: -0.03em; line-height: 1;"><img src="saveweb2zip-com-web-archive-org (1)/assets/f6621a6a-3972-46cc-9c0c-241f0c67823f_rw_1920.png" alt="Kirk Spencer" style="height: 1.5em; width: auto; max-width: 100%; display: block; margin-bottom: 20px;"><span style="color: var(--fg-dim); font-size: 0.7em;">Ventures &amp; Projects</span></h1>
+<h1 style="font-size: clamp(50px, 9vw, 160px); font-weight: 500; letter-spacing: -0.03em; line-height: 1;"><img alt="Kirk Spencer" src="./saveweb2zip-com-web-archive-org (1)/assets/f6621a6a-3972-46cc-9c0c-241f0c67823f_rw_1920.png" style="height: 1.5em; width: auto; max-width: 100%; display: block; margin-bottom: 20px;"/><span style="color: var(--fg-dim); font-size: 0.7em;">Ventures &amp; Projects</span></h1>
 </div>
 </section>
 <!-- WORK -->
 <section id="work">
-
 <div class="index" id="index">
 <a class="prow" data-flash="#e4231f" href="https://orchestrateai.pro/" tabindex="0" target="_blank">
 <span class="no">001</span>
@@ -300,7 +299,7 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 <span class="disc">mercuriholdings.com</span>
 <span class="year">Active</span>
 </a>
-<a class="prow" data-flash="#d97706" href="http://kirkspencer.co.uk/" tabindex="0" target="_blank">
+<a class="prow" data-flash="#d97706" href="https://kirkspencer.co.uk/" tabindex="0" target="_blank">
 <span class="no">005</span>
 <span class="name">Kirk Spencer<span class="arw">→</span></span>
 <span class="disc">kirkspencer.co.uk</span>
