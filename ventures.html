@@ -258,6 +258,22 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
   .logotype .odot .disk{transition:none}
 }
 </style>
+
+<style>
+  body {
+    zoom: 0.5; /* Zooms out by 50% */
+  }
+  /* Fallback for firefox */
+  @-moz-document url-prefix() {
+    body {
+      transform: scale(0.5);
+      transform-origin: top left;
+      width: 200vw;
+      height: 200vh;
+      overflow-x: hidden;
+    }
+  }
+</style>
 </head>
 <body><video autoplay="autoplay" id="bg-video" loop="loop" muted="muted" playsinline="playsinline" src="./assets_archive/assets/background_video.mp4" style="position: fixed; inset: 0; width: 100vw; height: 100vh; object-fit: cover; z-index: -1;"></video>
 <!-- grid overlay -->
@@ -326,8 +342,8 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 <div class="a">Kirk Spencer — Ventures</div>
 </footer>
 </main>
-<div class="ghint" id="ghint"><kbd>G</kbd> toggle grid</div>
-<div class="clock" id="clock"><b id="ct">--:--:--</b> · Zürich</div>
+
+<div class="clock" id="clock"><b id="ct">--:--:--</b> · London</div>
 <script>
 (function(){
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -450,7 +466,7 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
   const ct=document.getElementById('ct');
   function updClock(){
     try{
-      const s=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Zurich',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false}).format(new Date());
+      const s=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/London',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false}).format(new Date());
       ct.textContent=s;
     }catch(e){ ct.textContent=new Date().toTimeString().slice(0,8); }
   }
