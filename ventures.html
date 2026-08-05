@@ -259,21 +259,24 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 }
 </style>
 
+
+
 <style>
-  /* Zoom everything EXCEPT the background video and flash overlay */
-  .top, .main, .foot, .clock, .baseline-rows, .grid-overlay, .gread {
+  .zoom-wrapper {
     zoom: 0.5;
   }
-  /* Fallback for firefox */
   @-moz-document url-prefix() {
-    .top, .main, .foot, .clock {
+    .zoom-wrapper {
       transform: scale(0.5);
-      transform-origin: top left;
+      transform-origin: top center;
+      width: 200%;
     }
   }
 </style>
 </head>
 <body><video autoplay="autoplay" id="bg-video" loop="loop" muted="muted" playsinline="playsinline" src="./assets_archive/assets/background_video.mp4" style="position: fixed; inset: 0; width: 100vw; height: 100vh; object-fit: cover; z-index: -1;"></video>
+<div class="zoom-wrapper">
+
 <!-- grid overlay -->
 <div aria-hidden="true" class="baseline-rows" id="baseRows"></div>
 <div aria-hidden="true" class="grid-overlay" id="grid"></div>
@@ -473,5 +476,7 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
   /* ---------- pause rAF when hidden handled implicitly by rAF ---------- */
 })();
 </script>
+
+</div>
 </body>
 </html>
