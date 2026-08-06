@@ -32,8 +32,8 @@
     .outer-wrap { position: relative; z-index: 10; }
     
     /* Ensure social icons SVG paths don't inherit mix-blend-mode issues if any */
-    .social ul li a { position: relative; z-index: 20; transition: transform 0.3s ease; display: inline-block; }
-    .social ul li a:hover { transform: scale(1.1); }
+    .social ul li a { position: relative; z-index: 20; transition: opacity 0.3s ease; display: inline-block; }
+    .social ul li a:hover { opacity: 0.7; }
     </style><link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet"/>
@@ -48,13 +48,13 @@
 
 <style>
   .flash-link {
-    transition: opacity 0.4s ease, color 0.4s ease, transform 0.4s ease !important;
+    transition: opacity 0.4s ease, color 0.4s ease, 
   }
   .flash-link:hover {
     opacity: 0.7 !important;
   }
   svg.icon {
-    transition: fill 0.4s ease, opacity 0.4s ease, transform 0.4s ease !important;
+    transition: fill 0.4s ease, opacity 0.4s ease, 
   }
   .flash-link:hover svg.icon {
     opacity: 0.7 !important;
@@ -114,9 +114,7 @@ padding-bottom: 0px;
   margin: 0 auto;
   clear: both;
 ">
-<div class="js-lightbox lightbox-link" data-src="https://web.archive.org/web/20250614071810oe_/https://cdn.myportfolio.com/84c7439f-4505-4315-99e2-25488059171d/f6621a6a-3972-46cc-9c0c-241f0c67823f.png?h=211e9aa83d502785a5037c5366613ccd">
 <img class="js-lazy e2e-site-project-module-image image-loaded" sizes="(max-width: 1600px) 100vw, 1600px" src="./assets_archive/assets/f6621a6a-3972-46cc-9c0c-241f0c67823f_rw_1920.png" srcset="./assets_archive/assets/f6621a6a-3972-46cc-9c0c-241f0c67823f_rw_1920.png 600w, assets_archive/assets/f6621a6a-3972-46cc-9c0c-241f0c67823f_rw_1920.png 1200w, assets_archive/assets/f6621a6a-3972-46cc-9c0c-241f0c67823f_rw_1920.png 1600w" width="1600"/>
-</div>
 </div>
 <div class="project-module module embed project-module-embed js-js-project-module" style="display: flex; justify-content: center; width: 100%;"><iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4qb7FBaLAcywKznjAcJ7cg?utm_source=generator&amp;theme=0&amp;si=7e7d8e887b474137" width="40%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
 <div class="js-project-module project-module module social_icons project-module-social_icons align-" data-id="m5f6dc5cc778b67d5f727bb1b1494480beae29cd746c0efb72539a">
