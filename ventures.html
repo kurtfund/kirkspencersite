@@ -369,7 +369,7 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
     grid.classList.toggle('on',gridOn);
     baseRows.classList.toggle('on',gridOn);
     gread.classList.toggle('on',gridOn);
-    ghint.classList.toggle('hot',gridOn);
+    if(ghint) ghint.classList.toggle('hot',gridOn);
     if(gridOn){ updRead(); pulseDisk(); }
   }
   function pulseDisk(){
@@ -384,7 +384,7 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
       toggleGrid();
     }
   });
-  ghint.addEventListener('click',()=>toggleGrid());
+  if(ghint) ghint.addEventListener('click',()=>toggleGrid());
 
   /* ---------- Hover flash field ---------- */
   const flash=document.getElementById('flash');
